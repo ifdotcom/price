@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --abajo1-title: hsl(179, 62%, 43%);
+  --subtitle: hsl(71, 73%, 54%);
+  --top: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --abajo2: hsl(179, 47%, 52%);
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+}
+
+body {
+  background-color: var(--top);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 20px;
+
+  min-height: 100vh;
+}
+
+main {
+  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  width: 800px;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+section {
+  padding: 45px;
+}
+
+.abajo1__cyan {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.abajo2__lightcyan {
+  background-color: var(--abajo2);
+}
+
+.arriba__titulo {
+  color: var(--abajo1-title);
+  font-size: 40px;
+  line-height: 2;
+}
+
+.arriba__subtitulo {
+  color: var(--subtitle);
+  font-size: 28px;
+  line-height: 2;
+}
+
+.arriba__parrafo {
+  color: var(--grayish-blue);
+  font-size: 18px;
+  line-height: 1.5;
+}
+.abajo1 {
+  display: flex;
+}
+
+.abajo1 > section {
+  flex: 1;
+}
+.abajo1__cyan,
+.abajo2__lightcyan {
+  color: white;
+}
+
+.abajo1__cyan-titulo {
+  font-weight: 200;
+}
+
+.abajo1__cyan-precio {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: hsl(179, 43%, 75%);
+}
+
+.precio {
+  color: white;
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+section > p {
+  display: flex;
+  align-items: center;
+}
+
+.abajo1__cyan-parrafo2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  
+}
+
+.abajo1__cyan-boton {
+  background-color: var(--subtitle);
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  padding: 20px 0;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.abajo2__lightcyan-lista{
+list-style-type: none;
+opacity: 0.7;
+transform: translateX(-40px);
+margin-top: 15px;
+}
+
+.abajo2__lightcyan-item{
+line-height: 28px;
+
+
+}
+
+@media screen and (max-width: 600px) {
+	.abajo1 {
+		flex-direction: column;
+	}
+}
